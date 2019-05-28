@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import ResourceList from "./ResourceList";
 import HooksResourceList from "./HooksResourceList";
 import UserList from "./UserList";
+import CounterHook from "./CounterHook";
+import Toggle from "./Toggle";
 
 const App = () => {
 	const [resource, setResource] = useState("posts");
 
 	return (
 		<div>
+			<Toggle />
+			<CounterHook />
 			<UserList />
 			<div>
 				<button onClick={() => setResource("posts")}>Posts</button>
