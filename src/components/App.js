@@ -4,12 +4,16 @@ import HooksResourceList from "./HooksResourceList";
 import UserList from "./UserList";
 import CounterHook from "./CounterHook";
 import Toggle from "./Toggle";
+import FormHook from "./FormHook";
+import CustomFormHook from "./CustomFormHook";
 
 const App = () => {
 	const [resource, setResource] = useState("posts");
 
 	return (
 		<div>
+			<CustomFormHook />
+			<FormHook />
 			<Toggle />
 			<CounterHook />
 			<UserList />
