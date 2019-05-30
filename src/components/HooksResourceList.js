@@ -1,5 +1,5 @@
 import React from "react";
-import useResources from "./useResources";
+import useResources from "./hooks/useResources";
 
 const HooksResourceList = ({ resource }) => {
 	const resources = useResources(resource);
